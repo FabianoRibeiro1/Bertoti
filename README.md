@@ -23,10 +23,13 @@ Como dito anteriormente nossa vida está cada vez mais acelerada e isso é um mo
  estão em busca do melhor resultado.
 
 
-4 - ![alt text](<Classe UML-1.jpeg>)
+4 - Classe UML
+ ![alt text](<Classe UML-1.jpeg>)
 
 
-5 - Mercado.java 
+5 - java
+
+Mercado.java 
 
 package mercado;
 
