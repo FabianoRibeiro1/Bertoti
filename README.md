@@ -21,10 +21,14 @@ Nossa vida tende a ser cada vez mais automatizada e isso é um caminho sem volta
 c) Velocidade x Precisão:
 Como dito anteriormente nossa vida está cada vez mais acelerada e isso é um movimento global ou seja seus clientes, sua empresa, todos a sua volta vão querer sempre agilidade e pressa em suas entregas. Nesse caso dialogo pode ser o melhor caminho, uma vez explicando que a pressa pode comprometer a qualidade todos estarão de acordo que é melhor usar o bom senso ao escolher datas e prazos, afinal todos 
  estão em busca do melhor resultado.
+ 
 
 
 4 - Classe UML
- ![alt text](<Classe UML-1.jpeg>)
+
+![Captura de tela 2025-05-09 203428](https://github.com/user-attachments/assets/7efe2aef-eb25-452b-bf3e-f8fdc60708bd)
+
+
 
 
 5 - java
@@ -98,8 +102,20 @@ public void setTipo(String tipo) {
 public String getCod() {
    return cod;
 }
-public void setCod(String cod) {
-   this.cod = cod;
+
+6 - Teste
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class MercadoTest {
+
+    @Test
+    public void testProdutoVendido() {
+        Produto produto = new Produto("Produto 1", "Descrição Produto");
+        produto.marcarComoVendido();
+        assertEquals("Vendido", produto.getStatus());
+    }
 }
 
 
